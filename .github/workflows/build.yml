@@ -24,6 +24,12 @@ jobs:
           packages: 'platforms;android-34 build-tools;34.0.0 platform-tools'
           accept-android-sdk-licenses: true
 
+      - name: Install Gradle 8.10.2
+        run: |
+          wget https://services.gradle.org/distributions/gradle-8.10.2-bin.zip
+          unzip gradle-8.10.2-bin.zip
+          echo "PATH=$PATH:$PWD/gradle-8.10.2/bin" >> $GITHUB_ENV
+
       - name: Build APK
         run: gradle assembleDebug --no-daemon --stacktrace
 
