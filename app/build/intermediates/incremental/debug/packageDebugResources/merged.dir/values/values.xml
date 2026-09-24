@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#0A1628</color>
+    <color name="primary">#00E0FF</color>
+    <string name="app_name">JUkeos</string>
+</resources>
